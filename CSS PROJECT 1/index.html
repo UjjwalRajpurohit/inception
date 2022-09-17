@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIRST PROJECT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" text="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+    body {
+      color: aliceblue;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      background-image: url("/GYMimg.jpg");
+      z-index: -1;
+      font-family: 'Fjalla One', sans-serif;
+      height: 1200px;
+      animation: change 40s infinite;
+
+    }
+
+    body {
+      background-color: #bbbbbb;
+      z-index: -2;
+    }
+
+    @keyframes change {
+     0% {
+        background-image: url("GYMimg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      40%{
+        background-image: url("img1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+      }
+
+      60% {
+        background-image: url("img7.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      80% {
+        background-image: url("img13.jfif");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      100% {
+        background-image: url("GYMimg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .left {
+      display: inline-block;
+      /*border:3px solid rgb(120, 241, 211);*/
+      position: absolute;
+      left: 50px;
+      top: 24px;
+      font-size: 15px;
+      text-align: center;
+
+    }
+
+    .middle {
+      display: block;
+      width: 56%;
+      margin: 30px 20%;
+      /*border:3px solid rgb(243, 146, 206);*/
+      text-align: center;
+      font-size: 7px;
+      padding-left: -50px;
+      font-family: 'Fira Sans', sans-serif;
+
+
+    }
+
+    .right {
+      display: inline-block;
+      /*border:3px solid rgba(247, 236, 200, 0.911);*/
+      position: absolute;
+      right: 34px;
+      top: 25px;
+      font-family: 'Fjalla One', sans-serif;
+      padding: 0px;
+      color: #24262b;
+
+    }
+    #text{
+      background-color: rgb(236, 217, 212);
+      color: black;
+    }
+    #text:hover{
+      background-color: #ecbcb0;
+    }
+
+    .left img {
+      width: 50px;
+      filter: invert(100%);
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+      padding: 1px 25px;
+      font-family: 'Fjalla One', sans-serif;
+
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      color: gray;
+      text-decoration: underline;
+    }
+
+    .btn {
+      padding: 3px;
+      margin: 0px;
+      border-radius: 6px;
+      background-color: rgb(19, 16, 16);
+      color: aliceblue;
+      border: 2px solid rgb(243, 221, 193);
+      cursor: pointer;
+
+
+    }
+
+    .btn:hover {
+      background-color: rgb(61, 53, 53);
+    }
+
+    .main {
+      margin: 130px 70px;
+      width: 40%;
+      border: 2px solid aliceblue;
+      border-radius: 10px;
+
+    }
+
+    .form {
+      margin: 0px 40px;
+    }
+
+    .form input {
+      padding: 4px;
+      margin: 4px;
+      text-align: center;
+      font-size: 15px;
+      border: 2px solid black;
+      border-radius: 5px;
+      width: 96%;
+
+    }
+
+    .main h2 {
+      text-align: center;
+      padding-left: 10px;
+    }
+
+    #submit {
+      text-align: center;
+      width: 66%;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      margin-left: 85px;
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    #search {
+      color: black;
+      background-color: bisque;
+    }
+
+    #search:hover {
+      background-color: rgb(247, 196, 133);
+    }
+
+    body {
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1170px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .footer {
+      background-color: #24262b;
+      padding: 70px 0;
+      margin-top: 392px;
+    }
+
+    .column {
+      width: 25%;
+      padding: 0 15px;
+    }
+
+    .column h4 {
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .column h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+    }
+
+    .column ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .column ul li a {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .column ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px;
+    }
+
+    .column .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+
+    .column .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+    }
+
+    /*responsive*/
+    @media(max-width: 767px) {
+      .column {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media(max-width: 574px) {
+      .column {
+        width: 100%;
+      }
+    }  
+    
+  </style>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="left">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAYFBMVEX///8AAACPj491dXWjo6OgoKDOzs7b29tqamq9vb2UlJQPDw/l5eUfHx/Gxsb8/PxeXl6xsbF7e3upqanu7u6ampr19fVNTU1FRUW3t7c6OjoWFhYpKSnU1NQvLy9WVlaqUQxEAAABmUlEQVRoge2aYXOCMAyGLaCgdIBFHcMx//+/3AoHbdm5rcGa3fE+XzwwzfMlB7mEzQYAAAAAAAAAgBdFJYSIuwUZdjpDRshQxmIgoqoXZMjEyIEoj6cMvvZaGHYk99HKUPgdtU6KiuIuP6wMjdfRvS0XKUFeOBm8ii5yju4J8oOT4ehzVDlHzwR5TM/gHqXUe+Zk8Kp3BnnajaUVSi67O8W77cNUGU4+PDzU5VtwOUa/XkLJxypuTvPgxAkMIX+bruJ5cDv9lZ/CyG/GIN1YeTWRaRC5fDeXs7dFmjt/hZC/mMvZIxNyyCEPLC8jJTnkUkWl7phaDnmr7+a97uny3ddP3jfJxc9ySg/3m7zvbv8ir5KtL3XzKPlyIIcccsgh/2/yqk58edyLJdwr9SoYm4moH5M9v41q9F3WBnJgjX075JCvTc46CmMdAlobnfDjTzUPZh38so68NeGH/em9Yb/N2nYsBtbV1vKl3tnJ4LXUY11nsi5yeVfYVrVSyk1jitb704Hlny1MdkoGxg82AAAAAAAAAGDlfAJRUCfXNpf3LgAAAABJRU5ErkJggg==">
+      <div>Green Fitness</div>
+    </div>
+    <div class="middle">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Fitness Calculator </a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <input class="btn" id="text" type="text" placeholder="search here">
+      <button class="btn" id="search">Search</button>
+    </div>
+  </header>
+  <main>
+    <div class="main">
+      <div class="font">
+        <h2>Welcome to Mumbai's best GYM</h2>
+      </div>
+      <form action="noaction.php">
+        <div class="form">
+          <input type="text" class="font" placeholder="Enter your name ">
+        </div>
+        <div class="form">
+          <input type="text" class="font" placeholder="Enter your Gender ">
+        </div>
+        <div class="form">
+          <input type="number" class="font" placeholder="Enter your age ">
+        </div>
+        <div class="form">
+          <input type="text" class="font" placeholder="Enter your email id ">
+        </div>
+        <div class="form">
+          <input type="number" class="font" placeholder="Enter your number ">
+        </div>
+        <button class="btn" id="submit">Submit</button>
+      </form>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h4>company</h4>
+          <ul class="font">
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>get help</h4>
+          <ul class="font">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">pakages</a></li>
+            <li><a href="#">offers & benifits</a></li>
+            <li><a href="#">account status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>our braches</h4>
+          <ul class="font">
+            <li><a href="#">charni road</a></li>
+            <li><a href="#">marine lines</a></li>
+            <li><a href="#">bandra-west</a></li>
+            <li><a href="#">thane-east</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
