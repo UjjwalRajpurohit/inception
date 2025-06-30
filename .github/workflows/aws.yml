@@ -35,7 +35,7 @@ env:
   ECR_REPOSITORY: my-html-site           # set this to your Amazon ECR repository name
   ECS_SERVICE: new-test-task-service-c497rpdf                 # set this to your Amazon ECS service name
   ECS_CLUSTER: test_clluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .aws/task-definition.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: ./CSS_PROJECT_1/aws/task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: new-gym-site           # set this to the name of the container in the
                                            # set this to the name of the container in the
